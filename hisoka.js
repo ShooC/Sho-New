@@ -1,6 +1,6 @@
 /**
    * Base By Dika Ardnt.
-   * Recode By lui.
+   * Recode Slime Bot.
    * Contact Me on wa.me/6282146092695
    * Follow https://github.com/DikaArdnt
    * Folow - gh nya keban ≠_
@@ -539,7 +539,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         doc = pickRandom(['application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/msword', 'application/pdf'])                 
 const thumb2 = await getBuffer('https://telegra.ph/file/ec4389c5f2bca0748cbc8.jpg')
 const luithumb = await getBuffer('https://telegra.ph/file/019110c7ecbc463a32756.jpg')
-wm = 'Hisoka - Morou Recode By Lui'
+wm = 'Slime Bot By Sho'
 const fpayment = {
   key: {
     remoteJid: '0@s.whatsapp.net',
@@ -551,7 +551,7 @@ const fpayment = {
     "requestPaymentMessage": {
   "noteMessage": { extendedTextMessage: { text: `Lmao Banget Ngab` }},
   "currencyCodeIso4217": 'IDR',
-  "currencyCode": 'Mau Apa Bang Di Eval? Cie Anda Kang Copas Yahh Awokawok Tolol Luhh :v',
+  "currencyCode": 'Sho',
   "requestFrom": '0@s.whatsapp.net',
   "expiryTimestamp": "300000",
     "amount1000": "1000000",
@@ -562,7 +562,7 @@ const fpayment = {
 }
 
 const waitv2 = {
-react: { text: `⏳`,
+react: { text: `🕰️`,
         key: { remoteJid: m.chat, fromMe: false, id: m.key.id },
       }                  
       }
@@ -602,7 +602,7 @@ const fliveLoc = {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat  ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "caption":"©2022 Lui","h": `${wm}`, 'jpegThumbnail': await hisoka.reSize(thumb2, 300, 300)}}
+	 message: { "liveLocationMessage": { "caption":"Bot By Sho","h": `${wm}`, 'jpegThumbnail': await hisoka.reSize(thumb2, 300, 300)}}
 	}
 const ftoko = {
 key: {
@@ -617,7 +617,7 @@ key: {
 						"jpegThumbnail": await hisoka.reSize(thumb2, 300, 300)//Gambarnye
 					},
 					"title": wm, //Kasih namalu 
-					"description": `Hisoka - Morou`,
+					"description": `Slime Bot`,
 					"currencyCode": "USD",
 					"priceAmount1000": "20000000",
 					"retailerId": "Ghost",
@@ -650,8 +650,8 @@ const fgclink = {
 		"groupInviteMessage": {
 			"groupJid": "6282331033919-1625305606@g.us",
 			"inviteCode": "null",
-			"groupName": "Hisoka - Morou", 
-            "caption": `Recode By Lui`,
+			"groupName": "Slime Bot", 
+            "caption": `Recode Slime Bot`,
             'jpegThumbnail': await hisoka.reSize(thumb2, 300, 300)
 		}
 	}
@@ -932,7 +932,7 @@ Selama ${clockString(new Date - user.afkTime)}`)
             user.afkReason = ''
         }
                 
-      if (!m.sender.startsWith('62') && isCmd) throw 'indonesian only number for use bot\n or buy premium to use bot\nChat wa.me/6282146092695 to buy'    
+      if (!m.sender.startsWith('62') && isCmd) throw 'indonesian only number for use bot'    
 	    	    
         switch(command) {
 	    case prefix+'afk': {
@@ -1039,18 +1039,6 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 	    case prefix+'donasi': case prefix+'sewabot': case prefix+'sewa': case prefix+'buypremium': case prefix+'donate': {
 	        hisoka.sendText(m.chat, `Karena Masih Sepi User Dan Juga Bot Masih Baru Jadi Free Aja\nDonate To support Me!\nPulsa, dana, gopay : 6282146092695`, m)
             }
-            break
-            case prefix+'sc': {
-hisoka.relayMessage(m.chat, { requestPaymentMessage: {
-  noteMessage: { extendedTextMessage: { text: `Mau sc ? donate seikhlas nya donh om\nChat: wa.me/6282146092695` }},
-  currencyCodeIso4217: 'USD',
-  currencyCode: 'Mau Apa Bang Di Eval? Cie Anda Kang Copas Yahh Awokawok Tolol Luhh :v',
-  requestFrom: '0@s.whatsapp.net',
-  expiryTimestamp: 300000,
-    amount1000: 10000000,
-    amount: 1500000,
-
-}}, {})            }
             break
             case prefix+'chat': {
                 if (!isCreator) throw mess.owner
@@ -1392,9 +1380,9 @@ case prefix+'setpp': case prefix+'setppbot':
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-let teks = `══✪〘 *👥 Tag All* 〙✪══
+let teks = `══✪〘 *📁 Tag All* 〙✪══
  
- ➲ *Pesan : ${q ? q : 'kosong'}*\n\n`
+ ⟩ *Pesan : ${q ? q : 'kosong'}*\n\n`
                 for (let mem of participants) {
                 teks += `⭔ @${mem.id.split('@')[0]}\n`
                 }
@@ -1781,13 +1769,13 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Grub Bot',
+                                    url: 'https://chat.whatsapp.com/DbETJDJWKOl16OuICDzHyU'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    phoneNumber: '+62 856-0783-1412'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1798,11 +1786,6 @@ break
                                 quickReplyButton: {
                                     displayText: 'Contact Owner',
                                     id: 'owner'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1887,14 +1870,14 @@ break
                            hisoka.sendMessage(m.chat, waitv2, { quoted: m })
 
                 let media = await hisoka.downloadMediaMessage(qmsg)
-                let encmedia = await hisoka.sendImageAsSticker(m.chat, media, m, { packname: `${text1 ? '' + text1 : 'Create By Lui'}`, author: `${text2 ? '' + text2 : '' }` })
+                let encmedia = await hisoka.sendImageAsSticker(m.chat, media, m, { packname: `${text1 ? '' + text1 : 'Create Slime Bot'}`, author: `${text2 ? '' + text2 : '' }` })
                 await fs.unlinkSync(encmedia)
             } else if (/video/.test(mime)) {
                             hisoka.sendMessage(m.chat, waitv2, { quoted: m })
 
                 if (qmsg.seconds > 11) return m.reply('Maksimal 10 detik!')
                 let media = await hisoka.downloadMediaMessage(qmsg)
-                let encmedia = await hisoka.sendVideoAsSticker(m.chat, media, m, { packname: `${text1 ? '' + text1 : 'Create By Lui'}`, author: `${text2 ? '' + text2 : '' }` })
+                let encmedia = await hisoka.sendVideoAsSticker(m.chat, media, m, { packname: `${text1 ? '' + text1 : 'Create Slime Bot'}`, author: `${text2 ? '' + text2 : '' }` })
                 await fs.unlinkSync(encmedia)
             } else {
                 m.reply(`Kirim/reply gambar/video/gif dengan caption ${prefix + command}\nDurasi Video/Gif 1-9 Detik`)
@@ -2339,7 +2322,7 @@ rows: dalam
 ]
 const listMessage = {
 text: `Result of ${text}\nJumlah Yg di tampilkan ${luar.length}`,
-footer: `Simple whatsapp Bot Create By Lui`,
+footer: `Slime Bot WhatsApp Create Slime Bot`,
 title: "",
 buttonText: "Ok",
 sections
@@ -2378,13 +2361,13 @@ mediaUrl: `${lia[0].thumb}`,
             }
             const sections = [
                 {
-                title: "Klik Untuk Info selebihnya",
+                title: "Klik Untuk Info selebihnya 🔎",
                 rows: listSerch
                 }
                 ]
                 const listMessage = {
-                text: `Hisoka - Morou`,
-                footer: `By Ahmad Lui`,
+                text: `Slime Bot`,
+                footer: `By Sho`,
                 title: "",
                 buttonText: "Gempa Now",
                 sections
@@ -2406,9 +2389,9 @@ rows: nigga
 ]
 const listMessage = {
 text: `Hasil Dari ${text}`,
-footer: `Simple whatsapp Bot`,
+footer: `Slime Bot WhatsApp`,
 title: "",
-buttonText: "click!",
+buttonText: "Klik",
 sections
 }
 hisoka.sendMessage(m.chat, listMessage, {quoted:m})
@@ -2427,8 +2410,8 @@ rows: nigga
 }
 ]
 const listMessage = {
-text: `Kotamu gak ada di list ? Tenang Anda bisa juga mengetik .jadwalsholat (nama daerahmu)\nContoh: .jadwalsholat ponorogo`,
-footer: `Simple whatsapp Bot`,
+text: `Kotamu gak ada di list ? Tenang Anda bisa juga mengetik .jadwalsholat (nama daerahmu)\nContoh: .jadwalsholat surabaya`,
+footer: `Slime Bot WhatsApp`,
 title: "",
 buttonText: "here!",
 sections
@@ -2452,7 +2435,7 @@ rows: su
 ]
 const listMessage = {
 text: `${salat.date}\n\nShubuh: ${salat.today.Shubuh}\nDzuhur: ${salat.today.Dzuhur}\nAshr: ${salat.today.Ashr}\nMaghrib: ${salat.today.Maghrib}\nIsyak: ${salat.today.Isya}\n`,
-footer: `Simple whatsapp Bot`,
+footer: `Slime Bot WhatsApp`,
 title: "",
 buttonText: "List Lainnya",
 sections
@@ -2476,7 +2459,7 @@ rows: listJox
 ]
 const listMessage = {
 text: `Result from ${text}`,
-footer: `Simple whatsapp Bot - Create By ©AhmdLui`,
+footer: `Slime Bot WhatsApp - Create By Sho`,
 title: "",
 buttonText: "Klik!",
 sections
@@ -2509,7 +2492,7 @@ rows: cuks
 ]
 const listMessage = {
 text: `Turu`,
-footer: `Simple whatsapp Bot`,
+footer: `Slime Bot WhatsApp`,
 title: "",
 buttonText: "T_T",
 sections
@@ -2531,8 +2514,8 @@ rows: cuaks
 }
 ]
 const listMessage = {
-text: `Create by ©lui`,
-footer: `Simple whatsapp Bot`,
+text: `Create by sho`,
+footer: `Slime Bot WhatsApp`,
 title: "",
 buttonText: "Click here for result",
 sections
@@ -2559,7 +2542,7 @@ rows: listSerch
 ]
 const listMessage = {
 text: `Result from ${text}`,
-footer: `Simple whatsapp Bot`,
+footer: `Slime Bot WhatsApp`,
 title: "",
 buttonText: "List Search",
 sections
@@ -2585,7 +2568,7 @@ rows: lilnus
 ]
 const listMessage = {
 text: `Hasil Dari ${text}`,
-footer: `Simple whatsapp Bot`,
+footer: `Slime Bot WhatsApp`,
 title: "",
 buttonText: "Gw udah gakuat",
 sections
@@ -2647,7 +2630,7 @@ if (!pesan) return m.reply(`reply atau krim caption/gambar & video dengan captio
 hisoka.sendMessage(nomor+'@s.whatsapp.net', {image: global.thumb, bugimage }, {quoted: bugimage})
 }
 break
-case prefix+'luitesfitur': {
+case prefix+'slimetesfitur': {
  let [nomor, pesan] = text.split`|`
 if (!pesan) return m.reply(`reply atau krim caption/gambar & video dengan caption :\n${prefix + command} ${owner[0]}|gaush ribet`)
  if (!nomor) return m.reply(`nomor harus valid`)
@@ -2680,7 +2663,7 @@ let buttonMessage = {
                  mimetype: 'image/jpeg',
                  fileName: `${images}.jpg`,
                  caption: `Jika Suka dengan Gambarnya Anda Bisa mendownload File Di atas`,
-                 footer: `By Lui`,
+                 footer: `Slime Bot`,
                  contextInfo: { mentionedJid: [m.sender],
                  externalAdReply: {
                  title: `Preview Hasil Dari pencarian ${text}`,
@@ -2859,7 +2842,7 @@ let buttonMessage = {
                  mimetype: 'image/jpeg',
                  fileName: `${result}.jpg`,
                  caption: `Jika Suka dengan Gambarnya Anda Bisa mendownload File Di atas`,
-                 footer: `By Lui`,
+                 footer: `Slime Bot`,
                  contextInfo: { mentionedJid: [m.sender],
                  externalAdReply: {
                  title: `Preview Hasil Dari pencarian ${text}`,
@@ -3035,7 +3018,7 @@ if (!text) throw 'Masukan Judul nya!'
 }
 break
 case prefix+'gitclone': {
-    if (!text) throw 'link githubnya mana? contoh: https://github.com/LuiXyz/Hisoka-Morou'
+    if (!text) throw 'link githubnya mana? contoh: https://github.com/Contoh/Contoh'
     let regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     let [, user, repo] = text.match(regex) || []
     repo = repo.replace(/.git$/, '')
@@ -3115,13 +3098,13 @@ title: `${i.judul}`, rowId: `${prefix}otakudesu ${i.judul}`, description: `Updat
                 }
 const sections = [
 {
-title: "Simple whatsapp Bot!",
+title: "Slime Bot WhatsApp!",
 rows: nigga
 }
 ]
 const listMessage = {
 text: `List Update an Pada Hari ${ceng.hari} ${ceng.tanggal}`,
-footer: `Simple whatsapp Bot`,
+footer: `Slime Bot WhatsApp`,
 title: "",
 buttonText: "List Search",
 sections
@@ -3199,7 +3182,7 @@ case prefix+'otakudesu': {
 	             let judul = 'Hi '
       const sections = [
       {
-        title: 'By AhmdLui 🥶🥶️',
+        title: 'By Sho 🥶️',
         rows: [
           { title: 'Nabi Adam AS', rowId: `adam` },
           { title: 'Nabi Idris AS', rowId: `iddris` },
@@ -3233,9 +3216,9 @@ case prefix+'otakudesu': {
     const listMessage = {
       text: `
 Nih!!?! Kisah nya`,
-      footer: `Bilek 😅👆`,
+      footer: `Slime Bot`,
       title: ``,
-      buttonText: "Klik here",
+      buttonText: "Klik Disini",
       sections
     }
     hisoka.sendMessage(m.chat, listMessage, { quoted: fkontak, mentions: await hisoka.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
@@ -3253,7 +3236,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: 'https://coffee.alexflipnote.dev/random' },
-                    caption: `☕ Random Coffe`,
+                    caption: `☕ Random Kopi`,
                     footer: hisoka.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -3271,7 +3254,7 @@ break
                 let buttonMessage = {
                     image: { url: satir.image },
                     caption: `Image Type: ${satir.type}`,
-                    footer: `By Lui`,
+                    footer: `Slime Bot`,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3634,7 +3617,7 @@ break
                     m.reply(`ID : ${anu.result.gameId}\nUsername : ${anu.result.userName}`)
 		    db.data.users[m.sender].limit -= 1
                 } else if (type.toLowerCase() == 'cod') {
-                    if (!id) throw `No Query id, Example ${prefix + command} cod 6290150021186841472`
+                    if (!id) throw `No Query id, Example ${prefix + command} cod 62901××××××××××××××`
                     let anu = await fetchJson(api('zenz', '/api/nickcod', { apikey: global.APIKeys[global.APIs['zenz']], query: id }))
                     if (anu.status == false) return m.reply(anu.result.message)
                     m.reply(`ID : ${anu.result.gameId}\nUsername : ${anu.result.userName}`)
@@ -4480,8 +4463,8 @@ rows: cuks
 }
 ]
 const listMessage = {
-text: `create by ©lui`,
-footer: `textpro maker by lui scrape from exfarr-api`,
+text: `By Sho`,
+footer: `textpro maker Slime Bot scrape from exfarr-api`,
 title: "",
 buttonText: "list effects",
 sections
@@ -4644,7 +4627,7 @@ rows: trumin
 ]
 const listMessage = {
 text: `Twitter Downloader`,
-footer: `Simple whatsapp Bot`,
+footer: `Slime Bot WhatsApp`,
 title: "",
 buttonText: `Ditemukan ${fb.length} Hasil`,
 sections
@@ -4692,7 +4675,7 @@ rows: trumin
 ]
 const listMessage = {
 text: `Fb Downloader`,
-footer: `Simple whatsapp Bot`,
+footer: `Slime Bot WhatsApp`,
 title: "",
 buttonText: `Ditemukan ${fb.result.length} Hasil`,
 sections
@@ -5275,7 +5258,7 @@ bila sudah tidak ada harganya, berarti sudah tidak bisa dibeli / sudah level max
                             if (global.db.data.users[m.sender].money >= Bfood * count) {
                                 global.db.data.users[m.sender].makananpet += count * 1
                                 global.db.data.users[m.sender].money -= Bfood * count
-                                m.reply(`✔️ Sukses Membeli FoodPet 🥩 Dengan Harga ${Bfood * count} Money 💹`)
+                                m.reply(`✔️ Sukses Membeli FoodPet 🥩 Dengan Harga ${Bfood * count} Money 💸`)
                             } else m.reply(`Uang Anda Tidak Cukup`)
                         
                         break
@@ -5283,7 +5266,7 @@ bila sudah tidak ada harganya, berarti sudah tidak bisa dibeli / sudah level max
                             if (global.db.data.users[m.sender].money >= potion * count) {
                                 global.db.data.users[m.sender].money -= potion * count
                                 global.db.data.users[m.sender].potion += count * 1
-                                m.reply(`✔️ Sukses Membeli ${count} Potion 🥤 Dengan Harga ${potion * count} money 💹\n\n📍 Gunakan Potion Dengan Ketik: *${prefix}use potion <jumlah>*`)
+                                m.reply(`✔️ Sukses Membeli ${count} Potion 🥤 Dengan Harga ${potion * count} money 💸\n\n📍 Gunakan Potion Dengan Ketik: *${prefix}use potion <jumlah>*`)
                             } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Potion Dengan Harga ${potion * count} Money `,)
                         break
                     case `gold`:
@@ -5297,107 +5280,107 @@ bila sudah tidak ada harganya, berarti sudah tidak bisa dibeli / sudah level max
                             if (global.db.data.users[m.sender].money >= Bjagung * count) {
                             global.db.data.users[m.sender].money -= Bjagung * count
                             global.db.data.users[m.sender].bibitmangga += count * 1
-                            m.reply(`✔️ Sukses Membeli ${count} Bibit Mangga 🌾\nDengan Harga ${Bapel * count} money 💹`)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Mangga 🌾\nDengan Harga ${Bapel * count} Money 💹`,)
+                            m.reply(`✔️ Sukses Membeli ${count} Bibit Mangga 🌾\nDengan Harga ${Bapel * count} money 💸`)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Mangga 🌾\nDengan Harga ${Bapel * count} Money 💸`,)
                         break
                     case prefix+'bibitapel':
                             if (global.db.data.users[m.sender].money >= Bapel * count) {
                             global.db.data.users[m.sender].money -= Bapel* count
                             global.db.data.users[m.sender].bibitapel += count * 1
-                            m.reply(`✔️ Sukses Membeli ${count} Bibit Apel🌾\nDengan Harga ${Bapel * count} money 💹`)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Apel 🌾\nDengan Harga ${Bapel * count} Money 💹`,)
+                            m.reply(`✔️ Sukses Membeli ${count} Bibit Apel🌾\nDengan Harga ${Bapel * count} money 💸`)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Apel 🌾\nDengan Harga ${Bapel * count} Money 💸`,)
                         break
                     case prefix+'bibitjeruk':
                             if (global.db.data.users[m.sender].money >= Bapel * count) {
                             global.db.data.users[m.sender].money -= Bapel* count
                             global.db.data.users[m.sender].bibitjeruk += count * 1
-                            m.reply(`✔️ Sukses Membeli ${count} Bibit Jeruk🌾\nDengan Harga ${Bapel * count} money 💹`)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Jeruk 🌾\nDengan Harga ${Bapel * count} Money 💹`,)
+                            m.reply(`✔️ Sukses Membeli ${count} Bibit Jeruk🌾\nDengan Harga ${Bapel * count} money 💸`)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Jeruk 🌾\nDengan Harga ${Bapel * count} Money 💸`,)
                         break
                      case prefix+'bibitpisang':
                             if (global.db.data.users[m.sender].money >= Bapel * count) {
                             global.db.data.users[m.sender].money -= Bapel* count
                             global.db.data.users[m.sender].bibitpisang += count * 1
-                            m.reply(`✔️ Sukses Membeli ${count} Bibit Pisang🌾\nDengan Harga ${Bapel * count} money 💹`)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Pisang 🌾\nDengan Harga ${Bapel * count} Money 💹`,)
+                            m.reply(`✔️ Sukses Membeli ${count} Bibit Pisang🌾\nDengan Harga ${Bapel * count} money 💸`)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Pisang 🌾\nDengan Harga ${Bapel * count} Money 💸`,)
                         break
                     case prefix+'bibitanggur':
                             if (global.db.data.users[m.sender].money >= Bapel * count) {
                             global.db.data.users[m.sender].money -= Bapel* count
                             global.db.data.users[m.sender].bibitanggur += count * 1
-                            m.reply(`✔️ Sukses Membeli ${count} Bibit Anggur🌾\nDengan Harga ${Bapel * count} money 💹`)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Anggur 🌾\nDengan Harga ${Bapel * count} Money 💹`,)
+                            m.reply(`✔️ Sukses Membeli ${count} Bibit Anggur🌾\nDengan Harga ${Bapel * count} money 💸`)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Bibit Anggur 🌾\nDengan Harga ${Bapel * count} Money 💸`,)
                         break
                     case prefix+'diamond':
                             if (global.db.data.users[m.sender].money >= Bdiamond * count) {
                                 global.db.data.users[m.sender].diamond += count * 1
                                 global.db.data.users[m.sender].money -= Bdiamond * count
-                                m.reply(`✔️ Sukses Membeli ${count} Diamond 💎 Dengan Harga ${Bdiamond * count} Money 💹`)
+                                m.reply(`✔️ Sukses Membeli ${count} Diamond 💎 Dengan Harga ${Bdiamond * count} Money 💸`)
                             } else m.reply(`Uang Anda Tidak Cukup`)
                         break
                     case prefix+'batu':
                            if (global.db.data.users[m.sender].money >= Bbatu * count) {
                                global.db.data.users[m.sender].batu += count * 1
                                global.db.data.users[m.sender].money -= Bbatu * count
-                               m.reply(`✔️ Sukses Membeli ${count} Batu 🪨 Dengan Harga ${Bbatu * count} Money 💹`)
+                               m.reply(`✔️ Sukses Membeli ${count} Batu 🪨 Dengan Harga ${Bbatu * count} Money 💸`)
                             } else m.reply(`Uang Anda Tidak Cukup`)
                         break
                     case prefix+'umpan':
                            if (global.db.data.users[m.sender].money >= Bumpan * count) {
                                global.db.data.users[m.sender].umpan += count * 1
                                global.db.data.users[m.sender].money -= Bumpan * count
-                               m.reply(`✔️ Sukses Membeli ${count} Umpan 🪱 Dengan Harga ${Bumpan * count} Money 💹`)
+                               m.reply(`✔️ Sukses Membeli ${count} Umpan 🪱 Dengan Harga ${Bumpan * count} Money 💸`)
                             } else m.reply(`Uang Anda Tidak Cukup`)
                         break
                     case prefix+'kayu':
                             if (global.db.data.users[m.sender].money >= Bkayu * count) {
                                 global.db.data.users[m.sender].kayu += count * 1
                                 global.db.data.users[m.sender].money -= Bkayu * count
-                                m.reply(`✔️ Sukses Membeli ${count} Kayu 🪵 Dengan Harga ${Bkayu * count} Money 💹`)
+                                m.reply(`✔️ Sukses Membeli ${count} Kayu 🪵 Dengan Harga ${Bkayu * count} Money 💸`)
                             } else m.reply(`Uang Anda Tidak Cukup`)
                         break
                      case prefix+'aqua':
                             if (global.db.data.users[m.sender].money >= Baqua * count) {
                                 global.db.data.users[m.sender].aqua += count * 1
                                 global.db.data.users[m.sender].money -= Bkayu * count
-                                m.reply(`✔️ Sukses Membeli ${count} Aqua 🍶 Dengan Harga ${Baqua * count} Money 💹`)
+                                m.reply(`✔️ Sukses Membeli ${count} Aqua 🍶 Dengan Harga ${Baqua * count} Money 💸`)
                             } else m.reply(`Uang Anda Tidak Cukup`)
                         break
                     case prefix+'string':
                             if (global.db.data.users[m.sender].money >= Bstring * count) {
                                 global.db.data.users[m.sender].string += count * 1
                                 global.db.data.users[m.sender].money -= Bstring * count
-                                m.reply(`✔️ Sukses Membeli ${count} String 🕸️ Dengan Harga ${Bstring * count} Money 💹`)
+                                m.reply(`✔️ Sukses Membeli ${count} String 🕸️ Dengan Harga ${Bstring * count} Money 💸`)
                             } else m.reply(`Uang Anda Tidak Cukup`)
                         break
                     case prefix+'iron':
                            if (global.db.data.users[m.sender].money >= Biron * count) {
                                global.db.data.users[m.sender].iron += count * 1
                                global.db.data.users[m.sender].money -= Biron * count
-                               m.reply(`✔️ Sukses Membeli ${count} Iron ⛓️ Dengan Harga ${Biron * count} Money 💹`)
+                               m.reply(`✔️ Sukses Membeli ${count} Iron ⛓️ Dengan Harga ${Biron * count} Money 💸`)
                             } else m.reply(`Uang Anda Tidak Cukup`)
                         break
                     case prefix+'common':
                             if (global.db.data.users[m.sender].money >= Bcommon * count) {
                                 global.db.data.users[m.sender].common += count * 1
                                 global.db.data.users[m.sender].money -= Bcommon * count
-                                m.reply(`✔️ Sukses Membeli ${count} Common Crate 📦 Dengan Harga ${Bcommon * count} Money 💹`)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Common Crate 📦 Dengan Harga ${Bcommon * count} Money 💹 \n\n📍 Buka Crate Dengan Ketik: *${prefix}open common*`)
+                                m.reply(`✔️ Sukses Membeli ${count} Common Crate 📦 Dengan Harga ${Bcommon * count} Money 💸`)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Common Crate 📦 Dengan Harga ${Bcommon * count} Money 💸 \n\n📍 Buka Crate Dengan Ketik: *${prefix}open common*`)
                         
                         break
                     case prefix+'uncommon':
                             if (global.db.data.users[m.sender].money >= Buncommon * count) {
                                 global.db.data.users[m.sender].uncommon += count * 1
                                 global.db.data.users[m.sender].money -= Buncommon * count
-                                m.reply(`✔️ Sukses Membeli ${count} Uncommon Crate Dengan Harga ${Buncommon * count} Money 💹`)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Uncommon Crate 🛍️ Dengan Harga ${Buncommon * count} Money 💹\n\n📍 Buka Crate Dengan Ketik: *${prefix}open uncommon*`)
+                                m.reply(`✔️ Sukses Membeli ${count} Uncommon Crate Dengan Harga ${Buncommon * count} Money 💸`)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Uncommon Crate 🛍️ Dengan Harga ${Buncommon * count} Money 💸\n\n📍 Buka Crate Dengan Ketik: *${prefix}open uncommon*`)
                         
                         break
                     case prefix+'mythic':
                             if (global.db.data.users[m.sender].money >= Bmythic * count) {
                                     global.db.data.users[m.sender].mythic += count * 1
                                 global.db.data.users[m.sender].money -= Bmythic * count
-                                m.reply(`✔️ Sukses Membeli ${count} Mythic Crate 🎁 Dengan Harga ${Bmythic * count} Money 💹`)
+                                m.reply(`✔️ Sukses Membeli ${count} Mythic Crate 🎁 Dengan Harga ${Bmythic * count} Money 💸`)
                             } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Mythic Crate 🎁 Dengan Harga ${Bmythic* count} Money\n\n📍 Buka Crate Dengan Ketik:*${prefix}open mythic*`)
                         
                         break
@@ -5405,24 +5388,24 @@ bila sudah tidak ada harganya, berarti sudah tidak bisa dibeli / sudah level max
                             if (global.db.data.users[m.sender].money >= Blegendary * count) {
                                 global.db.data.users[m.sender].legendary += count * 1
                                 global.db.data.users[m.sender].money -= Blegendary * count
-                                m.reply(`✔️ Sukses Membeli ${count} Legendary Crate 🧰 Dengan Harga ${Blegendary * count} Money 💹`)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Legendary Crate 🧰 Dengan Harga ${Blegendary * count} Money  💹\n\n📍 Buka Crate Dengan Ketik: *${prefix}open legendary*`)
+                                m.reply(`✔️ Sukses Membeli ${count} Legendary Crate 🧰 Dengan Harga ${Blegendary * count} Money 💸`)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Legendary Crate 🧰 Dengan Harga ${Blegendary * count} Money  💸\n\n📍 Buka Crate Dengan Ketik: *${prefix}open legendary*`)
                         
                         break
                     case prefix+'pet':
                             if (global.db.data.users[m.sender].money >= Bpet * count) {
                                 global.db.data.users[m.sender].pet += count * 1
                                 global.db.data.users[m.sender].money -= Bpet * count
-                                m.reply(`✔️ Sukses Membeli ${count} Pet Crate 📫 Dengan Harga ${Bpet * count} Money 💹`)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Pet Crate 📫 Dengan Harga ${Bpet * count} Money  💹\n\n📍 Buka Crate Dengan Ketik: *${prefix}open legendary*`)
+                                m.reply(`✔️ Sukses Membeli ${count} Pet Crate 📫 Dengan Harga ${Bpet * count} Money 💸`)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Pet Crate 📫 Dengan Harga ${Bpet * count} Money  💸\n\n📍 Buka Crate Dengan Ketik: *${prefix}open legendary*`)
                         
                         break
                     case prefix+'sampah':
                             if (global.db.data.users[m.sender].money >= Bsampah * count) {
                                 global.db.data.users[m.sender].sampah += count * 1
                                 global.db.data.users[m.sender].money -= Bsampah * count
-                                m.reply(`✔️ Sukses Membeli ${count} Sampah 🗑️ Dengan Harga ${Bsampah * count} Money 💹 `)
-                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Sampah 🗑️ Dengan Harga ${Bsampah * count} Money 💹`)
+                                m.reply(`✔️ Sukses Membeli ${count} Sampah 🗑️ Dengan Harga ${Bsampah * count} Money 💸 `)
+                            } else m.reply(`Uang Anda Tidak Cukup Untuk Membeli ${count} Sampah 🗑️ Dengan Harga ${Bsampah * count} Money 💸`)
                         
                         break
                     case prefix+'armor':
@@ -5431,7 +5414,7 @@ bila sudah tidak ada harganya, berarti sudah tidak bisa dibeli / sudah level max
                                 global.db.data.users[m.sender].armor += 1
                                 global.db.data.users[m.sender].money -= armor * 1
                                 m.reply(`✔️ Sukses Membeli Armor 🥼 Seharga ${armor} Money` ,m)
-                            } else m.reply(`Uang Mu Tidak Cukup Untuk Membeli Armor 🥼 Seharga ${armor} Money 💹`)
+                            } else m.reply(`Uang Mu Tidak Cukup Untuk Membeli Armor 🥼 Seharga ${armor} Money 💸`)
                         
                         break
                      case prefix+'fishingrod':
@@ -5441,7 +5424,7 @@ bila sudah tidak ada harganya, berarti sudah tidak bisa dibeli / sudah level max
                                 global.db.data.users[m.sender].money -= armor * 1
                                 global.db.data.users[m.sender].fishingroddurability = durfishingrod
                                 m.reply(`✔️ Sukses Membeli Pancingan 🎣 Seharga ${pancing} Money` ,m)
-                            } else m.reply(`Uang Mu Tidak Cukup Untuk Membeli Pancingan 🎣 Seharga ${pancing} Money 💹`)
+                            } else m.reply(`Uang Mu Tidak Cukup Untuk Membeli Pancingan 🎣 Seharga ${pancing} Money 💸`)
                         
                         break
                     default:
@@ -5454,133 +5437,133 @@ bila sudah tidak ada harganya, berarti sudah tidak bisa dibeli / sudah level max
                         if (global.db.data.users[m.sender].potion >= count * 1) {
                             global.db.data.users[m.sender].money += Spotion * count
                             global.db.data.users[m.sender].potion -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Potion 🥤 Dengan Harga ${Spotion * count} Money 💹 `)
+                            m.reply(`✔️ Sukses Menjual ${count} Potion 🥤 Dengan Harga ${Spotion * count} Money 💸 `)
                         } else m.reply(`🥤 Potion Kamu Tidak Cukup`)
                         break
                     case prefix+'gold':
                         if (global.db.data.users[m.sender].gold >= count * 1) {
                             global.db.data.users[m.sender].money += Sgold * count
                             global.db.data.users[m.sender].gold -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Gold 🪙 Dengan Harga ${Sgold * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Gold 🪙 Dengan Harga ${Sgold * count} Money 💸`)
                         } else m.reply(`Gold Kamu Tidak Cukup`)
                         break
                     case prefix+'arloji':
                         if (global.db.data.users[m.sender].arlok >= count * 1) {
                             global.db.data.users[m.sender].money += Sarloji * count
                             global.db.data.users[m.sender].arlok -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Arloji 🧭 Dengan Harga ${Sarloji * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Arloji 🧭 Dengan Harga ${Sarloji * count} Money 💸`)
                         } else m.reply(`🧭 Arloji Kamu Tidak Cukup`)
                         break
                     case prefix+'batu':
                         if (global.db.data.users[m.sender].batu >= count * 1) {
                             global.db.data.users[m.sender].money += Sbatu * count
                             global.db.data.users[m.sender].batu -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Batu 🪨 Dengan Harga ${Sbatu * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Batu 🪨 Dengan Harga ${Sbatu * count} Money 💸`)
                         } else m.reply(`🪨 Batu Kamu Tidak Cukup`)
                         break
                     case prefix+'kayu':
                         if (global.db.data.users[m.sender].kayu >= count * 1) {
                             global.db.data.users[m.sender].money += Skayu * count
                             global.db.data.users[m.sender].kayu -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Kayu 🪵 Dengan Harga ${Skayu * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Kayu 🪵 Dengan Harga ${Skayu * count} Money 💸`)
                         } else m.reply(`🪵 Kayu Kamu Tidak Cukup`)
                         break
                     case prefix+'string':
                         if (global.db.data.users[m.sender].string >= count * 1) {
                             global.db.data.users[m.sender].money += Sstring * count
                             global.db.data.users[m.sender].string -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} String 🕸️ Dengan Harga ${Sstring * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} String 🕸️ Dengan Harga ${Sstring * count} Money 💸`)
                         } else m.reply(`🕸️ String Kamu Tidak Cukup`)
                         break
                     case prefix+'iron':
                         if (global.db.data.users[m.sender].iron >= count * 1) {
                             global.db.data.users[m.sender].money += Siron * count
                             global.db.data.users[m.sender].iron -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Iron ⛓️ Dengan Harga ${Siron * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Iron ⛓️ Dengan Harga ${Siron * count} Money 💸`)
                         } else m.reply(`⛓️ Iron Kamu Tidak Cukup`)
                         break
                     case prefix+'common':
                         if (global.db.data.users[m.sender].common >= count * 1) {
                             global.db.data.users[m.sender].money += Scommon * count
                             global.db.data.users[m.sender].common -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Common Crate 📦 Dengan Harga ${Scommon * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Common Crate 📦 Dengan Harga ${Scommon * count} Money 💸`)
                         } else m.reply(`📦 Common Crate Kamu Tidak Cukup`)
                         break
                     case prefix+'uncommon':
                         if (global.db.data.users[m.sender].uncommon >= count * 1) {
                             global.db.data.users[m.sender].money += Suncommon * count
                             global.db.data.users[m.sender].uncommon -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Uncommon Crate 🛍️ Dengan Harga ${Suncommon * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Uncommon Crate 🛍️ Dengan Harga ${Suncommon * count} Money 💸`)
                         } else m.reply(`🛍️ Uncommon Crate Kamu Tidak Cukup`)
                         break
                     case prefix+'mythic':
                         if (global.db.data.users[m.sender].mythic >= count * 1) {
                             global.db.data.users[m.sender].money += Smythic * count
                             global.db.data.users[m.sender].mythic -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Mythic Crate 🎁 Dengan Harga ${Smythic * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Mythic Crate 🎁 Dengan Harga ${Smythic * count} Money 💸`)
                         } else m.reply(`🎁 Mythic Crate Kamu Tidak Cukup `)
                         break
                     case prefix+'legendary':
                         if (global.db.data.users[m.sender].legendary >= count * 1) {
                             global.db.data.users[m.sender].money += Slegendary * count
                             global.db.data.users[m.sender].legendary -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Legendary Crate 🧰 Dengan Harga ${Slegendary * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Legendary Crate 🧰 Dengan Harga ${Slegendary * count} Money 💸`)
                         } else m.reply(`🧰 Legendary Crate Kamu Tidak Cukup `)
                         break
                      case prefix+'pet':
                         if (global.db.data.users[m.sender].pet >= count * 1) {
                             global.db.data.users[m.sender].money += Spet * count
                             global.db.data.users[m.sender].pet -= count * 1
-                            m.reply(`✔️ Sukses Menjual ${count} Pet Crate 📫 Dengan Harga ${Spet * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Pet Crate 📫 Dengan Harga ${Spet * count} Money 💸`)
                         } else m.reply(`📫 Pet Crate Kamu Tidak Cukup `)
                         break
                     case prefix+'sampah':
                         if (global.db.data.users[m.sender].sampah >= count * 1) {
                             global.db.data.users[m.sender].sampah -= count * 1
                             global.db.data.users[m.sender].money += Ssampah * count
-                            m.reply(`✔️ Sukses Menjual ${count} Sampah 🗑️ Dengan Harga ${Ssampah * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Sampah 🗑️ Dengan Harga ${Ssampah * count} Money 💸`)
                         } else m.reply(`🗑️ Sampah Anda Tidak Cukup `)
                         break
                     case prefix+'diamond':
                         if (global.db.data.users[m.sender].diamond >= count * 1) {
                             global.db.data.users[m.sender].diamond -= count * 1
                             global.db.data.users[m.sender].money += Sdiamond * count
-                            m.reply(`✔️ Sukses Menjual ${count} Diamond 💎 Dengan Harga ${Sdiamond * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Diamond 💎 Dengan Harga ${Sdiamond * count} Money 💸`)
                         } else m.reply(`💎 Diamond Anda Tidak Cukup `)
                         break
                      case prefix+'mangga':
                         if (global.db.data.users[m.sender].mangga >= count * 1) {
                             global.db.data.users[m.sender].mangga -= count * 1
                             global.db.data.users[m.sender].money += Smangga * count
-                            m.reply(`✔️ Sukses Menjual ${count} Mangga 🥭 Dengan Harga ${Smangga * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Mangga 🥭 Dengan Harga ${Smangga * count} Money 💸`)
                         } else m.reply(`🥭 Mangga Anda Tidak Cukup `)
                         break
                      case prefix+'apel':
                         if (global.db.data.users[m.sender].apel >= count * 1) {
                             global.db.data.users[m.sender].apel -= count * 1
                             global.db.data.users[m.sender].money += Smangga * count
-                            m.reply(`✔️ Sukses Menjual ${count} Apel 🍎 Dengan Harga ${Smangga * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Apel 🍎 Dengan Harga ${Smangga * count} Money 💸`)
                         } else m.reply(`🍎 Apel Anda Tidak Cukup `)
                         break
                      case prefix+'jeruk':
                         if (global.db.data.users[m.sender].jeruk >= count * 1) {
                             global.db.data.users[m.sender].jeruk -= count * 1
                             global.db.data.users[m.sender].money += Smangga * count
-                            m.reply(`✔️ Sukses Menjual ${count} Jeruk 🍊 Dengan Harga ${Smangga * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Jeruk 🍊 Dengan Harga ${Smangga * count} Money 💸`)
                         } else m.reply(`🍊 Jeruk Anda Tidak Cukup `)
                         break
                      case prefix+'anggur':
                         if (global.db.data.users[m.sender].anggur >= count * 1) {
                             global.db.data.users[m.sender].anggur -= count * 1
                             global.db.data.users[m.sender].money += Smangga * count
-                            m.reply(`✔️ Sukses Menjual ${count} Anggur 🍇 Dengan Harga ${Smangga * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Anggur 🍇 Dengan Harga ${Smangga * count} Money 💸`)
                         } else m.reply(`🍇 Anggur Anda Tidak Cukup `)
                         break
                      case prefix+'pisang':
                         if (global.db.data.users[m.sender].pisang >= count * 1) {
                             global.db.data.users[m.sender].pisang -= count * 1
                             global.db.data.users[m.sender].money += Smangga * count
-                            m.reply(`✔️ Sukses Menjual ${count} Pisang 🍌 Dengan Harga ${Smangga * count} Money 💹`)
+                            m.reply(`✔️ Sukses Menjual ${count} Pisang 🍌 Dengan Harga ${Smangga * count} Money 💸`)
                         } else m.reply(`🍌 Pisang Anda Tidak Cukup `)
                         break
                     default:
@@ -5822,7 +5805,7 @@ bila sudah tidak ada harganya, berarti sudah tidak bisa dibeli / sudah level max
                                 global.db.data.users[m.sender].armor += 1
                                 global.db.data.users[m.sender].diamond -= uparmor * 1
                                 m.reply(`✔️ Sukses Mengupgrade Armor 🥼 Seharga ${uparmor} Money` ,m)
-                            } else m.reply(`Uang Mu Tidak Cukup Untuk Mengupgrade Armor 🥼 Seharga ${uparmor} Money 💹`)
+                            } else m.reply(`Uang Mu Tidak Cukup Untuk Mengupgrade Armor 🥼 Seharga ${uparmor} Money 💸`)
                         
                         break
                         default:
@@ -5838,7 +5821,7 @@ bila sudah tidak ada harganya, berarti sudah tidak bisa dibeli / sudah level max
                                 global.db.data.users[m.sender].armor += 1
                                 global.db.data.users[m.sender].diamond -= uparmor * 1
                                 m.reply(`✔️ Sukses Mengupgrade Armor 🥼 Seharga ${uparmor} Money` ,m)
-                            } else m.reply(`Uang Mu Tidak Cukup Untuk Mengupgrade Armor 🥼 Seharga ${uparmor} Money 💹`)
+                            } else m.reply(`Uang Mu Tidak Cukup Untuk Mengupgrade Armor 🥼 Seharga ${uparmor} Money 💸`)
                         
                         break
                         default:
@@ -5885,7 +5868,7 @@ case prefix+'heal': case prefix+'use': {
         } else if (/heal/i.test(command)) {
             try {
                 let count = (/[0-9]/g.test(args[0])) ? !args[0] || args.length < 1 ? Math.max((Math.ceil((100 - global.db.data.users[m.sender].healt) / usepotion)), 1) : Math.max(args[0], 1) : Math.max((Math.ceil((100 - global.db.data.users[m.sender].healt) / usepotion)), 1)
-                let msgsucces = (pickRandom(['success memakai', 'Nice succes menggunakan', 'berhasil meminum ', 'primitif anda menggunakan', 'anda memakai', 'Anda menggunakan']) + ' *' + (count * 1) + `* 🥤Potion`)
+                let msgsucces = (pickRandom(['success memakai', 'Nice succes menggunakan', 'berhasil meminum ', 'primitif anda menggunakan', 'anda memakai', 'Anda menggunakan']) + ' *' + (count * 1) + `* Potion`)
                 if (global.db.data.users[m.sender].healt < 100) {
                     if (global.db.data.users[m.sender].potion >= count * 1) {
                         global.db.data.users[m.sender].potion -= count * 1
@@ -5949,7 +5932,7 @@ zero10 = `${rbrb10}`
 zero11 = `${rbrb11}`
 zero12 = `${rbrb12}`
 
-hsl = `*━━━━━━━━━[ Hasil Berburu]━━━━━━━━━*
+hsl = `*━━━━━━━━━[ Hasil Berburu ]━━━━━━━━━*
 
  *🐂 = [ ${zero1} ]*			*🐃 = [ ${zero7} ]*
  *🐅 = [ ${zero2} ]*			 *🐮 = [ ${zero8} ]*
@@ -6071,7 +6054,7 @@ case prefix+'berpetualang': case prefix+'work': case prefix+'mulung': case prefi
             let _iron = `${Math.floor(Math.random() * 2)}`.trim()
             let iron = (_iron * 1)
             let str = `
-❤️ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRandom(['🇯🇵 Jepang', '🇰🇷 Korea', '🇮🇳 India', '🇺🇲 Amerika', '🇵🇸 Palestin', '🇮🇶 Iraq', '🇸🇦 Arab', '🇵🇰 Pakistan', '🇩🇪 German', '🇫🇮 Finlandia', 'Ke bawa dunia mimpi 😱', 'Ujung dunia 🌏', 'Mars 👽', 'Bulan 🌚', 'Pluto 😱', 'Matahari 🌞', 'Hatinya dia ♥️', '...'])} dan mendapatkan
+❤️ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRandom(['🇯🇵 Jepang', '🇰🇷 Korea', '🇮🇳 India', '🇺🇲 Amerika', '🇵🇸 Palestin', '🇮🇶 Iraq', '🇸🇦 Arab', '🇵🇰 Pakistan', '🇩🇪 German', '🇫🇮 Finlandia', 'Ke bawa dunia mimpi 😱', 'Ujung dunia 🌏', 'Mars 👽', 'Bulan 🌚', 'Pluto 😱', 'Matahari 🌞', 'Hatinya dia ♥️', 'Masa lalu', 'Rumah mantan', 'Antah Berantah', 'Kekosongan'])} dan mendapatkan
 🧬 *exp:* ${exp} 
 💵 *uang:* ${uang}
 🗑️ *sampah:* ${sampah}${potion == 0 ? '' : `\n*🥤Potion:* ` + potion + ''}${iron == 0 ? '' : `\n*⛓️Iron:* ` + iron + ''}${kayu == 0 ? '' : `\n*🪵Kayu:* ` + kayu + ''}${batu == 0 ? '' : `\n*🪨Batu:* ` + batu + ''}${string == 0 ? '' : `\n*🕸️String:* ` + string + ''}${diamond == 0 ? '' : `\n*💎diamond:* ` + diamond + ''}${common == 0 ? '' : `\n*📦common crate:* ` + common + ''}${uncommon == 0 ? '' : `\n*🛍️uncommon crate:* ` + uncommon + ''}
@@ -6259,7 +6242,7 @@ let date = global.wm
 ⛔ *Banned:* No
 ❤️️ *Health:* ${healt}
 ⚡ *Stamina:* ${stamina}
-💹 *Money:* $${money}
+💸 *Money:* $${money}
 💳 *Bank:* $${atm}
 📊 *Level:* ${level}
 ✨ *Exp:* ${exp}
@@ -6398,7 +6381,7 @@ ${registered ? '🎨 *Age:* ' + age : ''}
 *📮 Monthly :* ${lastmonthly > 0 ? '❌' : '✅'}
 *──────────❏ Achievement ❏──────────*
 📊 *Top level:* ${userslevel.indexOf(m.sender) + 1} / ${userslevel.length}
-💹 *Top Money:* ${usersmoney.indexOf(m.sender) + 1} / ${usersmoney.length}
+💸 *Top Money:* ${usersmoney.indexOf(m.sender) + 1} / ${usersmoney.length}
 🪙  *Top Gold:* ${usersgold.indexOf(m.sender) + 1} / ${usersgold.length}
 💎 *Top Diamond:* ${usersdiamond.indexOf(m.sender) + 1} / ${usersdiamond.length}
 🧭 *Top Arloji:* ${usersarlok.indexOf(m.sender) + 1} / ${usersarlok.length}
@@ -6415,8 +6398,8 @@ hisoka.sendMessage(m.chat, { text: `${readMore + str}`,
     mediaUrl: `${flaminge + 'inventory'}`,
     renderLargerThumbnail: true,
     mediaType: 1,
-    description: `Ok`, 
-    body: `Powered By ©AhmdLui`,
+    description: `Slime Bot`, 
+    body: `Powered By Sho`,
     thumbnail: await getBuffer(flaminge + 'inventory'),
     sourceUrl: ``
      }}
@@ -6619,7 +6602,7 @@ let capt = `⭔ Title: ${judul}
     mediaUrl: `${su.img}`,
     renderLargerThumbnail: true,
     mediaType: 1,
-    description: `Ok` , 
+    description: `Bot By Sho` , 
     title: `${su.title}`,
     thumbnail: await getBuffer(su.img),
     sourceUrl: `${su.url}`
@@ -6640,15 +6623,15 @@ let capt = `⭔ Title: ${judul}
     let username = hisoka.getName(who)
     let str = `
 
-✧──────────[ *PROFILE* ]──────────✧
-📇 • *Name:* ${username} ${registered ? '(' + name + ') ': ''}
+✧──────────[ *Profile* ]──────────✧
+🦕 • *Name:* ${username} ${registered ? '(' + name + ') ': ''}
 📧 • *Tag:* @${who.replace(/@.+/, '')}
 📞 • *Number:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-💻 • *Link:* https://wa.me/${who.split`@`[0]}
+🔗 • *Link:* https://wa.me/${who.split`@`[0]}
 ${registered ? '🎨 • *Age:* ' + age : ''}
 
 🌟 • *Premium:* ${premium ? "✅" :"❌"}
-📑 • *Registered:* ${registered ? '✅': '❌'}
+📚 • *Registered:* ${registered ? '✅': '❌'}
 ⛔ • *Banned:* ❌
 
 `.trim()
@@ -6658,7 +6641,7 @@ ${registered ? '🎨 • *Age:* ' + age : ''}
 }
 break
             case prefix+'aminio': {
-            if (!text) throw `Example: ${prefix + command} free fire`
+            if (!text) throw `Example: ${prefix + command} mobile legend`
             let res = await fetchJson(api('zenz', '/webzone/amino', { query: text }, 'apikey'))
             let capt = `Aminio Search From : ${text}\n\n`
             for (let i of res.result){
@@ -6723,9 +6706,9 @@ rows: listSerch
 ]
 const listMessage = {
 text: `Tiktok Fyp`,
-footer: `Simple whatsapp Bot`,
+footer: `Slime Bot WhatsApp`,
 title: "",
-buttonText: "List Search",
+buttonText: "List Pencarian",
 sections
 }
 hisoka.sendMessage(m.chat, listMessage, {quoted:m})
@@ -6740,7 +6723,7 @@ let time = db.data.users[m.sender].lastjb = 300000
    // let timers = clockString(_timers) 
     //JANGAN DI OTAK ATIK
 //THIS PLUGINS BY RIZKY
-//THIS RECODE CASE BY LUI
+//THIS RECODE CASE Slime Bot
 //PEMBATAS
 let penumpan = ['mas mas','bapak bapak','cewe sma','bocil epep','emak emak']
 let penumpang = penumpan[Math.floor(Math.random() * penumpan.length)]
@@ -6795,14 +6778,14 @@ switch(type) {
 if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja\nSaatnya istirahat selama ${msToTime(time - new Date())}`
 	global.db.data.users[m.sender].atm += uangm
 global.db.data.users[m.sender].lastkerja = new Date * 1
-	m.reply(`Kamu Sudah Mengantarkan *${penumpang}* 🚗\nDan mendapatkan uang senilai *Rp ${uangm} 💹*`)
+	m.reply(`Kamu Sudah Mengantarkan *${penumpang}* 🚗\nDan mendapatkan uang senilai *Rp ${uangm} 💸*`)
 break
      case prefix+'pedagang':
      if (global.db.data.users[m.sender].pedagang == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
 if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja,Saatnya istirahat selama\n🕜 *${msToTime(time - new Date())}*`
 	global.db.data.users[m.sender].atm += duit
 global.db.data.users[m.sender].lastkerja = new Date * 1
-	m.reply(`Ada pembeli yg membeli *${dagangan}* 🛒\nDan mendapatkan uang senilai *Rp ${duit} 💹*`)
+	m.reply(`Ada pembeli yg membeli *${dagangan}* 🛒\nDan mendapatkan uang senilai *Rp ${duit} 💸*`)
 	if (pecat > 1 ) {
                    global.db.data.users[m.sender].pedagang -= pecat * 1
                    m.reply(ppecat)
@@ -6813,28 +6796,28 @@ break
 if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja,Saatnya istirahat selama\n🕜 *${msToTime(time - new Date())}*`
 	global.db.data.users[m.sender].atm += duitm
 global.db.data.users[m.sender].lastkerja = new Date * 1
-	m.reply(`Kamu menyembuhkan pasien *${pasien}* 💉\nDan mendapatkan uang senilai *Rp ${duitm}* 💹`)
+	m.reply(`Kamu menyembuhkan pasien *${pasien}* 💉\nDan mendapatkan uang senilai *Rp ${duitm}* 💸`)
 break
        case prefix+'petani':
 if (global.db.data.users[m.sender].petani == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
 if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja,Saatnya istirahat selama\n🕜 *${msToTime(time - new Date())}*`
 	global.db.data.users[m.sender].atm += uangm
 global.db.data.users[m.sender].lastkerja = new Date * 1
-	m.reply(`${panen} Sudah Panen !🌽 Dan menjualnya 🧺\nDan mendapatkan uang senilai Rp *${duitd} 💹*`)
+	m.reply(`${panen} Sudah Panen !🌽 Dan menjualnya 🧺\nDan mendapatkan uang senilai Rp *${duitd} 💸*`)
 break
      case prefix+'montir':
  if (global.db.data.users[m.sender].montir == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
 if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja,Saatnya istirahat selama\n🕜 *${msToTime(time - new Date())}*`
 	global.db.data.users[m.sender].atm += duitr
 global.db.data.users[m.sender].lastkerja = new Date * 1
-	m.reply(`Kamu Baru saja mendapatkan pelanggan dan memperbaiki *${bengkel} 🔧*\nDan kamu mendapatkan uang senilai *Rp ${duitr}* 💹`)
+	m.reply(`Kamu Baru saja mendapatkan pelanggan dan memperbaiki *${bengkel} 🔧*\nDan kamu mendapatkan uang senilai *Rp ${duitr}* 💸`)
 break
       case prefix+'kuli':
  if (global.db.data.users[m.sender].kuli == false) throw 'ini bukan tugas kamu atau kamu pengangguran!'
 if (new Date - global.db.data.users[m.sender].lastkerja < 300000)  throw `Kamu sudah bekerja,Saatnya istirahat selama\n🕜 *${msToTime(time)}*`
 	global.db.data.users[m.sender].atm += duitk
 global.db.data.users[m.sender].lastkerja = new Date * 1
-	m.reply(`Kamu baru saja selesai ${rumah} 🔨\nDan mendapatkan uang senilai *Rp ${duitk} 💹*`)
+	m.reply(`Kamu baru saja selesai ${rumah} 🔨\nDan mendapatkan uang senilai *Rp ${duitk} 💸*`)
 break
 default:
                         return m.reply(kerjam)
@@ -7034,10 +7017,10 @@ rows: sfw_lst
 }
 ]
 const listMessage = {
-text: `Simple Bot By Me`,
-footer: `©lui`,
+text: `Slime Bot`,
+footer: `By Sho`,
 title: "",
-buttonText: "Click Here",
+buttonText: "Klik disini",
 sections
 }
 hisoka.sendMessage(m.chat, listMessage, {quoted:m})               
@@ -7470,8 +7453,8 @@ ${readMore}
     mediaUrl: `${flaminge + 'menu'}`,
     renderLargerThumbnail: true,
     mediaType: 1,
-    description: `Ok`, 
-    body: `Powered By ©AhmdLui`,
+    description: `Slime Bot`, 
+    body: `Powered By Sho`,
     thumbnail: await getBuffer(flaminge + 'menu'),
     sourceUrl: ``
      }}
