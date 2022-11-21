@@ -167,15 +167,15 @@ async function startHisoka() {
 
                 if (anu.action == 'add') {
 hisoka.sendMessage(anu.id, {
-buttons: [{buttonId: `Thx Lui`, buttonText: { displayText: "Hi Beban!" }, type: 1 }],
-document: { url: 'https://wa.me/6282146092695' },
+buttons: [{buttonId: `Oke`, buttonText: { displayText: "Hi!" }, type: 1 }],
+document: { url: 'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe' },
 mimetype: 'video/3gpp',
 jpegThumbnail: await hisoka.reSize(ppny, 300, 300),
 fileName: `Number ${PhoneNumber('+' + num.replace('@s.whatsapp.net', '')).getNumber('international')} Join!`,
 fileLength: 3221000000,
 pageCount: 1222222, // berapa halaman?
 caption: `Selamat Datang!`,
-footer: `Hisoka - Morou By AhmdLui`,
+footer: `🪐 Slime Bot`,
 contextInfo: { mentionedJid: [m.sender],
 externalAdReply: {
 title: `Welcome To ${metadata.subject}!`,
@@ -214,8 +214,8 @@ mediaUrl: `ppuser`
                 } else if (anu.action == 'promote') {
                 let capt = `Selamat kepada @${num.split(`@`)[0]} yg telah di promote`
 hisoka.sendMessage(anu.id, {
-buttons: [{buttonId: `Thx Lui`, buttonText: { displayText: "Selamat!" }, type: 1 }],
-document: { url: 'https://wa.me/6282146092695' },
+buttons: [{buttonId: `Okey`, buttonText: { displayText: "Selamat!" }, type: 1 }],
+document: { url: 'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe' },
 mimetype: 'video/3gpp',
 fileName: `Number ${PhoneNumber('+' + num.replace('@s.whatsapp.net', '')).getNumber('international')} is now admin!`,
 fileLength: 3221000000,
@@ -223,7 +223,7 @@ pageCount: 1222222, // berapa halaman?
 jpegThumbnail: await hisoka.reSize(ppny, 300, 300),
 caption: capt,
 mentions: hisoka.parseMention(capt),
-footer: `Hisoka - Morou By AhmdLui`,
+footer: `Slime Bot By Sho`,
  contextInfo: { mentionedJid: [m.sender],
 externalAdReply: {
 title: `Promote From ${metadata.subject}`,
@@ -237,15 +237,15 @@ mediaUrl: `ppuser`
 }
 })                } else if (anu.action == 'demote') {
 hisoka.sendMessage(anu.id, {
-buttons: [{buttonId: `Thx Lui`, buttonText: { displayText: "Selamat!" }, type: 1 }],
-document: { url: 'https://wa.me/6282146092695' },
+buttons: [{buttonId: `Okey`, buttonText: { displayText: "Selamat!" }, type: 1 }],
+document: { url: 'https://chat.whatsapp.com/L6b4QjsMpgn8vpecqZltBe' },
 mimetype: 'video/3gpp',
 jpegThumbnail: await hisoka.reSize(ppny, 300, 300),
 fileName: `Number ${PhoneNumber('+' + num.replace('@s.whatsapp.net', '')).getNumber('international')} is not admin!`,
 fileLength: 3221000000,
 pageCount: 1222222, // berapa halaman?
 caption: `Selamat kepada Member yg telah di demote`,
-footer: `Hisoka - Morou By AhmdLui`,
+footer: `Slime Bot By Sho`,
 contextInfo: { mentionedJid: [m.sender],
 externalAdReply: {
 title: `Demote From ${metadata.subject}`,
